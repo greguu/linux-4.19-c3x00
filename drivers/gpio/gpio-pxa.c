@@ -244,9 +244,9 @@ int pxa_irq_to_gpio(int irq)
 static bool pxa_gpio_has_pinctrl(void)
 {
 	switch (gpio_type) {
-	case PXA3XX_GPIO:
-		return false;
 	case PXA27X_GPIO:
+		return false;
+	case PXA3XX_GPIO:
 		return false;
 
 	default:
